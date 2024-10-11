@@ -1,0 +1,134 @@
+/* Apply basic styles to body and html to ensure full-page height */
+
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Dancing Script', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d41c1c;
+}
+
+/* Styling the card */
+.flip-container {
+    perspective: 1000px;
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+    top: 30%;
+}
+.card {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(135deg, #ff6f91, #ab8ce4);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    width: 70%;
+    text-align: center;
+    box-sizing: border-box;
+}
+.card::before, .card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 58%;
+    height: 1px; /* Adjust thickness of the line */
+    background-color: white; /* Line color */
+    z-index: 1; /* Place lines above background */
+}
+.card::before {
+    left: 0;
+    transform: rotate(30deg); /* Diagonal line from the left */
+    transform-origin: top left; /* Rotation point */
+}
+.card::after {
+    right: 0;
+    transform: rotate(-30deg); /* Diagonal line from the left */
+    transform-origin: top right; /* Rotation point */
+}
+/* Additional styles for elements inside the card */
+
+.card .topic {
+    display: flex;
+    justify-content: space-between;
+}
+.card h3 {
+    font-size: 13px ;
+
+    color: rgb(255, 255, 255);
+   margin-top: 80px;
+}
+.card p {
+    font-size: 13px ;
+
+    color: white;
+    margin-bottom: 10px;
+}
+
+.card button {
+    padding: 7px 15px;
+    background-color:  rgb(0, 0, 0, 0.07);
+    color: rgb(255, 255, 255);
+    border:  none;
+    border-radius: 5px;
+    font-size: 8px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: transparent;
+    border:#0056b3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 780px) {
+    .card {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: linear-gradient(135deg, #ff6f91, #ab8ce4);
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        padding: 20px;
+        width: 50%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    .card::before, .card::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 58%;
+        height: 1px; /* Adjust thickness of the line */
+        background-color: white; /* Line color */
+        z-index: 1; /* Place lines above background */
+    }
+    .card h3 {
+        font-size: 21px ;
+        color: rgb(255, 255, 255);
+        margin-top: 80px;
+    }
+    .card .topic {
+       margin-bottom: 100px;
+    }
+    .card p {
+        font-size: 21px ;
+        color: white;
+        margin-bottom: 10px;
+    }
+    .card button {
+        padding: 10px 15px;
+        background-color:  rgb(0, 0, 0, 0.07);
+        color: rgb(255, 255, 255);
+        border:  none;
+        border-radius: 5px;
+        font-size: 21px;
+        cursor: pointer;
+        bottom: 0%;
+    }
+}

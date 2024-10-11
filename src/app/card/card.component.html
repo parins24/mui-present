@@ -1,0 +1,58 @@
+
+<div class="flip-container" [ngClass]="{'flipped': isFlipped}">
+    <div class="card">
+        
+        <div class="front">
+            <div class="topic">
+                <h2>Happy Birthday to my love</h2>
+            </div>
+            <div class="content">
+                <p>It's been two years and almost six months that we've been together. We're probably in my car right now, but I know the place doesn't matter. I just want to say that you are my heart, my inspiration, and you are my future. You don't have to worry about my love for you ever being less. I can promise you that.</p>
+                <p>We've been through a lot sadness, happiness, and even depression but we passed through those times with our hands still holding each other. Anything that may or may not come in the future will not change what we feel for each other.</p>
+                <p>Anyway, happy birthday on your 24th! I wish you happiness, and I hope only good things come into your life, along with flawless health. I will always be right here for you, at any age. I love you so much. muiim</p>
+            </div>
+            <div class="content">
+                <p> NuggetPooh</p>
+            </div>
+            <div class="flip">
+                <button (click)="flipCard()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
+                    <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41m-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9"/>
+                    <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5 5 0 0 0 8 3M3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9z"/>
+                  </svg></button>
+            </div>
+        </div>
+        <div class="back">
+            <div class="topic">
+                <h2>Nong MUi 24 ขวบ</h2>
+            </div>
+            <div class="images">
+               <img src="assets/IMG_1651.jpg" alt="">
+               <img src="assets/IMG_2053.jpg" alt="">
+               <img src="assets/IMG_2279.jpg" alt="">
+               <img src="assets/IMG_2593.jpg" alt="">
+            </div>
+            <div class="present">
+                <p> Are you waiting for your presents? Look at the back seat</p>
+            </div>
+            <div class="flip">
+                
+                <button (click)="flipCard()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-repeat" viewBox="0 0 16 16">
+                    <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41m-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9"/>
+                    <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5 5 0 0 0 8 3M3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9z"/>
+                  </svg></button>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<body>
+    <div class="package">
+        <div class="topic">
+            <h3>To: My ftw<3</h3>
+            <h3>date: 13/10/24</h3>
+        </div>
+        <button [routerLink]="['/']">wrap</button>
+    </div>
+</body>
+
